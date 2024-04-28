@@ -6,7 +6,8 @@ import SignUpUserSteps from "@/components/tutorial/SignUpUserSteps";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button"
 import { Menu } from "@/components/menu"
-
+import { MenuBar } from "@/components/menu-bar"
+import Image from "next/image"
 
 
 
@@ -24,11 +25,41 @@ export default async function Index() {
   const isSupabaseConnected = canInitSupabaseClient();
 
   return (
-    // <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-cover bg-center" style={{ backgroundImage: "url('/images/background.jpg')" }}>
-    // <div className="hidden md:block" >
-    <div  >
-    <Menu />
-  </div>
+
+    <>
+      <div className="md:hidden">
+        <Image
+          src="/images/music-light.png"
+          width={1280}
+          height={1114}
+          alt="Music"
+          className="block dark:hidden"
+        />
+        <Image
+          src="/images/music-dark.png"
+          width={1280}
+          height={1114}
+          alt="Music"
+          className="hidden dark:block"
+        />
+      </div>
+
+      <div className="hidden md:block">
+        <Menu />
+        <div className="border-t">
+          <div className="bg-background">
+            <div className="grid lg:grid-cols-5">
+
+              11111
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </>
+
 
 
   );
