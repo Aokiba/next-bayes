@@ -33,8 +33,8 @@ export default function RootLayout({
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <head />
         <body>
+          {/* <ModeToggle/> */}
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
