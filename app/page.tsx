@@ -43,7 +43,6 @@ export default async function Index() {
           className="hidden dark:block"
         />
       </div>
-
       <div className="hidden md:block">
         <Menu />
         <div className="border-t">
