@@ -27,7 +27,7 @@ export default async function Index() {
   return (
 
     <>
-      <div className="md:hidden">
+      {/* <div className="md:hidden">
         <Image
           src="/images/music-light.png"
           width={1280}
@@ -42,7 +42,7 @@ export default async function Index() {
           alt="Music"
           className="hidden dark:block"
         />
-      </div>
+      </div> */}
       <div className="hidden md:block">
         <Menu />
         <div className="border-t">
